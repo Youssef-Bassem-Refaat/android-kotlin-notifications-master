@@ -31,7 +31,7 @@ private val NOTIFICATION_ID = 0
 private val REQUEST_CODE = 0
 private val FLAGS = 0
 
-// TODO: Step 1.1 extension function to send messages (GIVEN)
+// ء    TODO: Step 1.1 extension function to send messages (GIVEN)
 /**
  * Builds and delivers the notification.
  *
@@ -44,7 +44,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
     val contentIntent = Intent(applicationContext, MainActivity::class.java)
     // TODO: Step 1.12 create PendingIntent
     val contentPendingIntent = PendingIntent.getActivity(
-        applicationContext,
+        applicationContext ,
         NOTIFICATION_ID,
         contentIntent,
         PendingIntent.FLAG_UPDATE_CURRENT
@@ -67,7 +67,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         snoozeIntent,
         FLAGS)
 
-    // TODO: Step 1.2 get an instance of NotificationCompat.Builder
+    // ءTODO: Step 1.2 get an instance of NotificationCompat.Builder
     // Build the notification
     val builder = NotificationCompat.Builder(
         applicationContext,
