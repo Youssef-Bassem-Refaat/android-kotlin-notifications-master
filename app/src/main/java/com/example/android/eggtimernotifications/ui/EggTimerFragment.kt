@@ -81,6 +81,7 @@ class EggTimerFragment : Fragment() {
             val notificationManager = requireActivity().getSystemService(
                 NotificationManager::class.java
             )
+            notificationManager.createNotificationChannel(notificationChannel)
 
         }
         // TODO: Step 1.6 END create a channel
