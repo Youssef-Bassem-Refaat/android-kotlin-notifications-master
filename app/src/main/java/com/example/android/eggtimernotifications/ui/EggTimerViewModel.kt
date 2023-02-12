@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 package com.example.android.eggtimernotifications.ui
 
 import android.app.*
@@ -115,7 +115,7 @@ class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {
                 _alarmOn.value = true
                 val selectedInterval = when (timerLengthSelection) {
                     0 -> second * 10 //For testing only
-                    else ->timerLengthOptions[timerLengthSelection] * minute
+                    else -> timerLengthOptions[timerLengthSelection] * minute
                 }
                 val triggerTime = SystemClock.elapsedRealtime() + selectedInterval
 
